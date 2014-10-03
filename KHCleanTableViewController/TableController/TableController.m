@@ -48,14 +48,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-    }
 
-    NSString *info = [self.model itemAtIndexpath:indexPath];
-    cell.textLabel.text = info;
-    return cell;
+    return [CellFactory1 cellAtIndexPath:indexPath tableView:tableView model:self.model];
 }
 
 @end

@@ -15,8 +15,16 @@
     return 80;
 }
 
-- (UITableViewCell *)cellAtIndexPath:(NSIndexPath *)indexPath model:(id<KHTableViewModel>)model {
-    return nil;
++ (UITableViewCell *)cellAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView model:(id<KHTableViewModel>)model {
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    }
+
+    NSString *info = [model itemAtIndexpath:indexPath];
+    cell.textLabel.text = info;
+    return cell;
 }
 
 @end

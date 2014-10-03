@@ -12,6 +12,6 @@
 @protocol KHTableViewCellFactoryProtocol <NSObject>
 
 + (CGFloat)heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id<KHTableViewModel>)model;
-- (UICollectionViewCell *)cellAtIndexPath:(NSIndexPath *)indexPath model:(id<KHTableViewModel>)model;
++ (UITableViewCell *)cellAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView model:(id<KHTableViewModel>)model;
 
 @end
