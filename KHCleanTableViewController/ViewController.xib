@@ -15,12 +15,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zuO-2E-VDS">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zuO-2E-VDS">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zuO-2E-VDS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Atf-dI-ZOh"/>
+                <constraint firstItem="zuO-2E-VDS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="agK-Sr-AxR"/>
+                <constraint firstAttribute="trailing" secondItem="zuO-2E-VDS" secondAttribute="trailing" id="ikM-6z-hfR"/>
+                <constraint firstAttribute="bottom" secondItem="zuO-2E-VDS" secondAttribute="bottom" id="s44-hc-CEv"/>
+            </constraints>
         </view>
     </objects>
 </document>

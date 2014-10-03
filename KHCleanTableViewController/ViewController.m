@@ -29,7 +29,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.basicModel = [[BasicTableViewModel alloc] initWithModel:[[BasicTableViewModel alloc] init]];
+    BasicTableViewModel *model1 = [[BasicTableViewModel alloc] init];
+    model1.sectionModel = [[KHBasicSectionModel alloc] init];
+
+    self.basicModel = [[BasicTableViewModel alloc] initWithModel:model1];
     self.basicModel.sectionModel = [[KHBasicSectionModel alloc] init];
     self.tableView.dataSource = self;
 }
@@ -44,13 +47,21 @@
     return numberCellInSection;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    id<KHTableViewSectionModel> sectionModel = [self.basicModel sectionAtIndex:section];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
+    title.text = [sectionModel title];
+    return title;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld %ld", (long)indexPath.section, (long)indexPath.row];
+    NSString *info = [self.basicModel itemAtIndexpath:indexPath];
+    cell.textLabel.text = info;
     return cell;
 }
 

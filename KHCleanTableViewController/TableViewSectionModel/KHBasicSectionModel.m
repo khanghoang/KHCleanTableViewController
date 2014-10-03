@@ -15,7 +15,7 @@
 }
 
 - (NSArray *)items {
-    return @[@"a", @"b", @"c", @"a", @"b", @"c", @"a", @"b", @"c"];
+    return @[@"a", @"b", @"c", @"d", @"e", @"f", @"g", @"h", @"i"];
 }
 
 @end
