@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "KHTableViewModel.h"
 
 @interface TableController : NSObject
 <
 UITableViewDataSource,
 UITableViewDelegate
 >
+
+@property (strong, nonatomic) id<KHTableViewModel> model;
 
 @end

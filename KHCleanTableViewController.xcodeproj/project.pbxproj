@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B476D4D119DE620B00AAF39E /* CellFactory1.m in Sources */ = {isa = PBXBuildFile; fileRef = B476D4D019DE620B00AAF39E /* CellFactory1.m */; };
 		B485BD1019DD473200429F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD0F19DD473200429F62 /* main.m */; };
 		B485BD1319DD473200429F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD1219DD473200429F62 /* AppDelegate.m */; };
 		B485BD1619DD473200429F62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD1519DD473200429F62 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B476D4CF19DE620B00AAF39E /* CellFactory1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFactory1.h; sourceTree = "<group>"; };
+		B476D4D019DE620B00AAF39E /* CellFactory1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFactory1.m; sourceTree = "<group>"; };
 		B485BD0A19DD473200429F62 /* KHCleanTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHCleanTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B485BD0E19DD473200429F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B485BD0F19DD473200429F62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				B485BD3E19DD4CBC00429F62 /* KHTableViewCellFactoryProtocol.h */,
+				B476D4CF19DE620B00AAF39E /* CellFactory1.h */,
+				B476D4D019DE620B00AAF39E /* CellFactory1.m */,
 			);
 			path = TableViewCellFactory;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			files = (
 				B485BD3B19DD49D700429F62 /* TableController.m in Sources */,
 				B485BD1619DD473200429F62 /* ViewController.m in Sources */,
+				B476D4D119DE620B00AAF39E /* CellFactory1.m in Sources */,
 				B485BD1319DD473200429F62 /* AppDelegate.m in Sources */,
 				B485BD4319DD4E4500429F62 /* BasicTableViewModel.m in Sources */,
 				B485BD1019DD473200429F62 /* main.m in Sources */,
@@ -470,6 +476,7 @@
 				B485BD2F19DD473200429F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B485BD3019DD473200429F62 /* Build configuration list for PBXNativeTarget "KHCleanTableViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				B485BD3219DD473200429F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

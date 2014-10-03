@@ -10,17 +10,16 @@
 #import "TableController.h"
 #import "BasicTableViewModel.h"
 #import "KHBasicSectionModel.h"
+#import "CellFactory1.h"
 
 @interface ViewController ()
-<
-    UITableViewDelegate,
-    UITableViewDataSource
->
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) TableController *tableController;
 @property (strong, nonatomic) BasicTableViewModel *basicModel;
+
+@property (strong, nonatomic) CellFactory1 *cellFactory;
 
 @end
 
@@ -34,42 +33,12 @@
 
     self.basicModel = [[BasicTableViewModel alloc] initWithModel:model1];
     self.basicModel.sectionModel = [[KHBasicSectionModel alloc] init];
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
-}
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    NSUInteger sections = [self.basicModel numberOfSection];
-    return sections;
-}
+    self.tableController = [[TableController alloc] init];
+    [self.tableController setModel:self.basicModel];
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSUInteger numberCellInSection = [self.basicModel numberOfItemsInSection:section];
-    return numberCellInSection;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
-    return 20;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    id<KHTableViewSectionModel> sectionModel = [self.basicModel sectionAtIndex:section];
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
-    title.text = [sectionModel title];
-    title.backgroundColor = [UIColor lightGrayColor];
-    title.textAlignment = NSTextAlignmentCenter;
-    return title;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-    }
-
-    NSString *info = [self.basicModel itemAtIndexpath:indexPath];
-    cell.textLabel.text = info;
-    return cell;
+    self.tableView.dataSource = self.tableController;
+    self.tableView.delegate = self.tableController;
 }
 
 @end
