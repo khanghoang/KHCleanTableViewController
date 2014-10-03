@@ -35,6 +35,7 @@
     self.basicModel = [[BasicTableViewModel alloc] initWithModel:model1];
     self.basicModel.sectionModel = [[KHBasicSectionModel alloc] init];
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -47,10 +48,16 @@
     return numberCellInSection;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
+    return 20;
+}
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     id<KHTableViewSectionModel> sectionModel = [self.basicModel sectionAtIndex:section];
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
     title.text = [sectionModel title];
+    title.backgroundColor = [UIColor lightGrayColor];
+    title.textAlignment = NSTextAlignmentCenter;
     return title;
 }
 
