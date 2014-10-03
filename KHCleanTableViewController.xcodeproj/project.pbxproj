@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B476D4D119DE620B00AAF39E /* CellFactory1.m in Sources */ = {isa = PBXBuildFile; fileRef = B476D4D019DE620B00AAF39E /* CellFactory1.m */; };
+		B476D4D419DE886D00AAF39E /* CustomCellA.m in Sources */ = {isa = PBXBuildFile; fileRef = B476D4D319DE886D00AAF39E /* CustomCellA.m */; };
+		B476D4D619DE888100AAF39E /* CustomCellA.xib in Resources */ = {isa = PBXBuildFile; fileRef = B476D4D519DE888100AAF39E /* CustomCellA.xib */; };
 		B485BD1019DD473200429F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD0F19DD473200429F62 /* main.m */; };
 		B485BD1319DD473200429F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD1219DD473200429F62 /* AppDelegate.m */; };
 		B485BD1619DD473200429F62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD1519DD473200429F62 /* ViewController.m */; };
@@ -33,6 +35,9 @@
 /* Begin PBXFileReference section */
 		B476D4CF19DE620B00AAF39E /* CellFactory1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFactory1.h; sourceTree = "<group>"; };
 		B476D4D019DE620B00AAF39E /* CellFactory1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFactory1.m; sourceTree = "<group>"; };
+		B476D4D219DE886D00AAF39E /* CustomCellA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellA.h; sourceTree = "<group>"; };
+		B476D4D319DE886D00AAF39E /* CustomCellA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellA.m; sourceTree = "<group>"; };
+		B476D4D519DE888100AAF39E /* CustomCellA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellA.xib; sourceTree = "<group>"; };
 		B485BD0A19DD473200429F62 /* KHCleanTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHCleanTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B485BD0E19DD473200429F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B485BD0F19DD473200429F62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 				B485BD3819DD49AE00429F62 /* TableViewSectionModel */,
 				B485BD1119DD473200429F62 /* AppDelegate.h */,
 				B485BD1219DD473200429F62 /* AppDelegate.m */,
+				B476D4D219DE886D00AAF39E /* CustomCellA.h */,
+				B476D4D319DE886D00AAF39E /* CustomCellA.m */,
+				B476D4D519DE888100AAF39E /* CustomCellA.xib */,
 				B485BD1419DD473200429F62 /* ViewController.h */,
 				B485BD1519DD473200429F62 /* ViewController.m */,
 				B485BD3319DD483B00429F62 /* ViewController.xib */,
@@ -267,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B476D4D619DE888100AAF39E /* CustomCellA.xib in Resources */,
 				B485BD1E19DD473200429F62 /* LaunchScreen.xib in Resources */,
 				B485BD3419DD483B00429F62 /* ViewController.xib in Resources */,
 				B485BD1B19DD473200429F62 /* Images.xcassets in Resources */,
@@ -291,6 +300,7 @@
 				B485BD1619DD473200429F62 /* ViewController.m in Sources */,
 				B476D4D119DE620B00AAF39E /* CellFactory1.m in Sources */,
 				B485BD1319DD473200429F62 /* AppDelegate.m in Sources */,
+				B476D4D419DE886D00AAF39E /* CustomCellA.m in Sources */,
 				B485BD4319DD4E4500429F62 /* BasicTableViewModel.m in Sources */,
 				B485BD1019DD473200429F62 /* main.m in Sources */,
 				B485BD4619DD657E00429F62 /* KHBasicSectionModel.m in Sources */,
