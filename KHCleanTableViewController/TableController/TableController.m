@@ -48,7 +48,6 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
     return [CellFactory1 cellAtIndexPath:indexPath tableView:tableView model:self.model];
 }
 

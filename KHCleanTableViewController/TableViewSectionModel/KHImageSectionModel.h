@@ -1,5 +1,5 @@
 //
-//  CustomCellA.h
+//  KHImageSectionModel.h
 //  KHCleanTableViewController
 //
 //  Created by Triệu Khang on 3/10/14.
@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KHCellProtocol.h"
+#import "KHTableViewSectionModel.h"
 
-@interface CustomCellA : UITableViewCell
+@interface KHImageSectionModel : NSObject
 <
-    KHCellProtocol
+    KHTableViewSectionModel
 >
 
 @end

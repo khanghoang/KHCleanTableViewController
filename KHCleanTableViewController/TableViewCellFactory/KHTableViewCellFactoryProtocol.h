@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "KHTableViewModel.h"
+#import "KHCellProtocol.h"
 
 @protocol KHTableViewCellFactoryProtocol <NSObject>
 
 + (CGFloat)heightForItemAtIndexpath:(NSIndexPath *)indexpaht model:(id<KHTableViewModel>)model;
-+ (UITableViewCell *)cellAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView model:(id<KHTableViewModel>)model;
++ (UITableViewCell<KHCellProtocol> *)cellAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView model:(id<KHTableViewModel>)model;
 
 @end

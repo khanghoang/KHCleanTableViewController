@@ -10,7 +10,9 @@
 #import "TableController.h"
 #import "BasicTableViewModel.h"
 #import "KHBasicSectionModel.h"
+#import "KHImageSectionModel.h"
 #import "CellFactory1.h"
+#import <FLEX/FLEXManager.h>
 
 @interface ViewController ()
 
@@ -27,12 +29,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [[FLEXManager sharedManager] showExplorer];
     // Do any additional setup after loading the view, typically from a nib.
-    BasicTableViewModel *model1 = [[BasicTableViewModel alloc] init];
+
+    BasicTableViewModel *model2 = [[BasicTableViewModel alloc] init];
+    model2.sectionModel = [[KHImageSectionModel alloc] init];
+
+    BasicTableViewModel *model1 = [[BasicTableViewModel alloc] initWithModel:model2];
     model1.sectionModel = [[KHBasicSectionModel alloc] init];
 
-    self.basicModel = [[BasicTableViewModel alloc] initWithModel:model1];
-    self.basicModel.sectionModel = [[KHBasicSectionModel alloc] init];
+    self.basicModel = model1;
 
     self.tableController = [[TableController alloc] init];
     [self.tableController setModel:self.basicModel];

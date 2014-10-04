@@ -31,7 +31,7 @@
 
 - (NSInteger)numberOfItemsInSection:(NSInteger)section {
     if(section == 0) return self.sectionModel.items.count;
-    return [self numberOfItemsInSection:section-1];
+    return [self.viewModel numberOfItemsInSection:section-1];
 }
 
 - (id<KHTableViewSectionModel>)sectionAtIndex:(NSInteger)sectionIndex {
