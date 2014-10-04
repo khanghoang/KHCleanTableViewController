@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B424077BA4415D9263A07A94 /* libPods-KHCleanTableViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA991A40BD286B58D022D11F /* libPods-KHCleanTableViewController.a */; };
 		B476D4D119DE620B00AAF39E /* CellFactory1.m in Sources */ = {isa = PBXBuildFile; fileRef = B476D4D019DE620B00AAF39E /* CellFactory1.m */; };
 		B476D4D419DE886D00AAF39E /* CustomCellA.m in Sources */ = {isa = PBXBuildFile; fileRef = B476D4D319DE886D00AAF39E /* CustomCellA.m */; };
 		B476D4D619DE888100AAF39E /* CustomCellA.xib in Resources */ = {isa = PBXBuildFile; fileRef = B476D4D519DE888100AAF39E /* CustomCellA.xib */; };
+		B476D4DA19DE910900AAF39E /* KHImageSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B476D4D919DE910900AAF39E /* KHImageSectionModel.m */; };
 		B485BD1019DD473200429F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD0F19DD473200429F62 /* main.m */; };
 		B485BD1319DD473200429F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD1219DD473200429F62 /* AppDelegate.m */; };
 		B485BD1619DD473200429F62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD1519DD473200429F62 /* ViewController.m */; };
@@ -33,11 +35,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67719FBD42C2025CC6E7F353 /* Pods-KHCleanTableViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHCleanTableViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KHCleanTableViewController/Pods-KHCleanTableViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		8209205EC5E0D2A49FA6C1C5 /* Pods-KHCleanTableViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHCleanTableViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-KHCleanTableViewController/Pods-KHCleanTableViewController.release.xcconfig"; sourceTree = "<group>"; };
 		B476D4CF19DE620B00AAF39E /* CellFactory1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFactory1.h; sourceTree = "<group>"; };
 		B476D4D019DE620B00AAF39E /* CellFactory1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFactory1.m; sourceTree = "<group>"; };
 		B476D4D219DE886D00AAF39E /* CustomCellA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellA.h; sourceTree = "<group>"; };
 		B476D4D319DE886D00AAF39E /* CustomCellA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellA.m; sourceTree = "<group>"; };
 		B476D4D519DE888100AAF39E /* CustomCellA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellA.xib; sourceTree = "<group>"; };
+		B476D4D719DE904E00AAF39E /* KHCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHCellProtocol.h; sourceTree = "<group>"; };
+		B476D4D819DE910900AAF39E /* KHImageSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHImageSectionModel.h; sourceTree = "<group>"; };
+		B476D4D919DE910900AAF39E /* KHImageSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHImageSectionModel.m; sourceTree = "<group>"; };
 		B485BD0A19DD473200429F62 /* KHCleanTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHCleanTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B485BD0E19DD473200429F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B485BD0F19DD473200429F62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 		B485BD4219DD4E4500429F62 /* BasicTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewModel.m; sourceTree = "<group>"; };
 		B485BD4419DD657E00429F62 /* KHBasicSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicSectionModel.h; sourceTree = "<group>"; };
 		B485BD4519DD657E00429F62 /* KHBasicSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicSectionModel.m; sourceTree = "<group>"; };
+		BA991A40BD286B58D022D11F /* libPods-KHCleanTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KHCleanTableViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B424077BA4415D9263A07A94 /* libPods-KHCleanTableViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +96,8 @@
 				B485BD0C19DD473200429F62 /* KHCleanTableViewController */,
 				B485BD2619DD473200429F62 /* KHCleanTableViewControllerTests */,
 				B485BD0B19DD473200429F62 /* Products */,
+				BB2114AB0EA19BE103B76804 /* Pods */,
+				B7AAF259E0952AF7F4A163EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				B485BD3E19DD4CBC00429F62 /* KHTableViewCellFactoryProtocol.h */,
+				B476D4D719DE904E00AAF39E /* KHCellProtocol.h */,
 				B476D4CF19DE620B00AAF39E /* CellFactory1.h */,
 				B476D4D019DE620B00AAF39E /* CellFactory1.m */,
 			);
@@ -183,6 +195,8 @@
 				B485BD3D19DD4B8F00429F62 /* KHTableViewSectionModel.h */,
 				B485BD4419DD657E00429F62 /* KHBasicSectionModel.h */,
 				B485BD4519DD657E00429F62 /* KHBasicSectionModel.m */,
+				B476D4D819DE910900AAF39E /* KHImageSectionModel.h */,
+				B476D4D919DE910900AAF39E /* KHImageSectionModel.m */,
 			);
 			path = TableViewSectionModel;
 			sourceTree = "<group>";
@@ -195,6 +209,23 @@
 			path = TableViewSectionFactory;
 			sourceTree = "<group>";
 		};
+		B7AAF259E0952AF7F4A163EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA991A40BD286B58D022D11F /* libPods-KHCleanTableViewController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB2114AB0EA19BE103B76804 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67719FBD42C2025CC6E7F353 /* Pods-KHCleanTableViewController.debug.xcconfig */,
+				8209205EC5E0D2A49FA6C1C5 /* Pods-KHCleanTableViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B485BD2D19DD473200429F62 /* Build configuration list for PBXNativeTarget "KHCleanTableViewController" */;
 			buildPhases = (
+				F48835DB4F711FFACAFEB21D /* Check Pods Manifest.lock */,
 				B485BD0619DD473200429F62 /* Sources */,
 				B485BD0719DD473200429F62 /* Frameworks */,
 				B485BD0819DD473200429F62 /* Resources */,
+				884A9075C0C85A91D6B9D7AE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,11 +324,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		884A9075C0C85A91D6B9D7AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KHCleanTableViewController/Pods-KHCleanTableViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F48835DB4F711FFACAFEB21D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B485BD0619DD473200429F62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B476D4DA19DE910900AAF39E /* KHImageSectionModel.m in Sources */,
 				B485BD3B19DD49D700429F62 /* TableController.m in Sources */,
 				B485BD1619DD473200429F62 /* ViewController.m in Sources */,
 				B476D4D119DE620B00AAF39E /* CellFactory1.m in Sources */,
@@ -415,6 +482,7 @@
 		};
 		B485BD2E19DD473200429F62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67719FBD42C2025CC6E7F353 /* Pods-KHCleanTableViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KHCleanTableViewController/Info.plist;
@@ -425,6 +493,7 @@
 		};
 		B485BD2F19DD473200429F62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8209205EC5E0D2A49FA6C1C5 /* Pods-KHCleanTableViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KHCleanTableViewController/Info.plist;
