@@ -18,7 +18,7 @@
 @implementation CustomCellA
 
 - (void)configWithData:(id)data {
-    [self.imgCellAvatar setImageWithURL:[NSURL URLWithString:data]];
+    [self.imgCellAvatar setImageWithURL:data];
 }
 
 - (void)prepareForReuse {

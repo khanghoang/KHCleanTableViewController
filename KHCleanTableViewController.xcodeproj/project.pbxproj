@@ -22,6 +22,9 @@
 		B485BD3B19DD49D700429F62 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD3A19DD49D700429F62 /* TableController.m */; };
 		B485BD4319DD4E4500429F62 /* BasicTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD4219DD4E4500429F62 /* BasicTableViewModel.m */; };
 		B485BD4619DD657E00429F62 /* KHBasicSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B485BD4519DD657E00429F62 /* KHBasicSectionModel.m */; };
+		B4C59C8519E06839001384E2 /* KHLoadMoreSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C59C8419E06839001384E2 /* KHLoadMoreSection.m */; };
+		B4C59C8919E06E1E001384E2 /* KHLoadMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C59C8719E06E1E001384E2 /* KHLoadMoreTableViewCell.m */; };
+		B4C59C8A19E06E1E001384E2 /* KHLoadMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C59C8819E06E1E001384E2 /* KHLoadMoreTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,11 @@
 		B485BD4219DD4E4500429F62 /* BasicTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewModel.m; sourceTree = "<group>"; };
 		B485BD4419DD657E00429F62 /* KHBasicSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHBasicSectionModel.h; sourceTree = "<group>"; };
 		B485BD4519DD657E00429F62 /* KHBasicSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHBasicSectionModel.m; sourceTree = "<group>"; };
+		B4C59C8319E06839001384E2 /* KHLoadMoreSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadMoreSection.h; sourceTree = "<group>"; };
+		B4C59C8419E06839001384E2 /* KHLoadMoreSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadMoreSection.m; sourceTree = "<group>"; };
+		B4C59C8619E06E1E001384E2 /* KHLoadMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHLoadMoreTableViewCell.h; sourceTree = "<group>"; };
+		B4C59C8719E06E1E001384E2 /* KHLoadMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHLoadMoreTableViewCell.m; sourceTree = "<group>"; };
+		B4C59C8819E06E1E001384E2 /* KHLoadMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHLoadMoreTableViewCell.xib; sourceTree = "<group>"; };
 		BA991A40BD286B58D022D11F /* libPods-KHCleanTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KHCleanTableViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +131,9 @@
 				B476D4D219DE886D00AAF39E /* CustomCellA.h */,
 				B476D4D319DE886D00AAF39E /* CustomCellA.m */,
 				B476D4D519DE888100AAF39E /* CustomCellA.xib */,
+				B4C59C8619E06E1E001384E2 /* KHLoadMoreTableViewCell.h */,
+				B4C59C8719E06E1E001384E2 /* KHLoadMoreTableViewCell.m */,
+				B4C59C8819E06E1E001384E2 /* KHLoadMoreTableViewCell.xib */,
 				B485BD1419DD473200429F62 /* ViewController.h */,
 				B485BD1519DD473200429F62 /* ViewController.m */,
 				B485BD3319DD483B00429F62 /* ViewController.xib */,
@@ -197,6 +208,8 @@
 				B485BD4519DD657E00429F62 /* KHBasicSectionModel.m */,
 				B476D4D819DE910900AAF39E /* KHImageSectionModel.h */,
 				B476D4D919DE910900AAF39E /* KHImageSectionModel.m */,
+				B4C59C8319E06839001384E2 /* KHLoadMoreSection.h */,
+				B4C59C8419E06839001384E2 /* KHLoadMoreSection.m */,
 			);
 			path = TableViewSectionModel;
 			sourceTree = "<group>";
@@ -311,6 +324,7 @@
 				B476D4D619DE888100AAF39E /* CustomCellA.xib in Resources */,
 				B485BD1E19DD473200429F62 /* LaunchScreen.xib in Resources */,
 				B485BD3419DD483B00429F62 /* ViewController.xib in Resources */,
+				B4C59C8A19E06E1E001384E2 /* KHLoadMoreTableViewCell.xib in Resources */,
 				B485BD1B19DD473200429F62 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +378,7 @@
 			files = (
 				B476D4DA19DE910900AAF39E /* KHImageSectionModel.m in Sources */,
 				B485BD3B19DD49D700429F62 /* TableController.m in Sources */,
+				B4C59C8919E06E1E001384E2 /* KHLoadMoreTableViewCell.m in Sources */,
 				B485BD1619DD473200429F62 /* ViewController.m in Sources */,
 				B476D4D119DE620B00AAF39E /* CellFactory1.m in Sources */,
 				B485BD1319DD473200429F62 /* AppDelegate.m in Sources */,
@@ -371,6 +386,7 @@
 				B485BD4319DD4E4500429F62 /* BasicTableViewModel.m in Sources */,
 				B485BD1019DD473200429F62 /* main.m in Sources */,
 				B485BD4619DD657E00429F62 /* KHBasicSectionModel.m in Sources */,
+				B4C59C8519E06839001384E2 /* KHLoadMoreSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
