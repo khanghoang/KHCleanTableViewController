@@ -15,7 +15,7 @@
 }
 
 - (NSArray *)items {
-    return @[@"a"];
+    return @[@"Load more"];
 }
 
 @end
